@@ -1,0 +1,7 @@
+@import 'variables';
+
+@mixin transition($transition) {
+        transition: $transition;
+        -webkit-transition: $transition;
+        -moz-transition: $transition;
+    }
