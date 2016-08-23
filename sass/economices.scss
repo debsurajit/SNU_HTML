@@ -55,7 +55,7 @@
             font-family: $font-family-crimson-roman;
         }
         p {
-            font-size: $font-size;
+            font-size: $font-size-m;
             line-height: 30px;
             color: $black-color;
         }
@@ -82,7 +82,7 @@
             float: left;
             i {
                 color: $white-color;
-                font-size: $font-size-xxl;
+                font-size: $font-h1;
             }
         }
         .event-date {
@@ -173,12 +173,13 @@ section {
         }
     }
     h1 {
-        font-family: $font-family;
+        font-family: $font-family-open-sans-light;
         color: $department-base-color;
         font-size: $font-lg;
     }
     p {
         font-size: $font-size-m;
+        color: $department-text-gray;
     }
 }
 
@@ -200,7 +201,8 @@ section {
                 display: table-cell;
                 vertical-align: middle;
                 color: $white-color;
-                font-family: $font-family;
+                font-family: $font-family-open-sans-semibold;
+                font-size: $font-h4;
                 line-height: 24px;
             }
         }
@@ -214,21 +216,23 @@ section {
         border-right: none;
         border-bottom: none;
         h3 {
-            font-family: $font-family-semibold;
+            font-family: $font-family-probold;
             color: $department-base-color;
             padding: 0 0 30px 0;
         }
         p {
             font-size: $font-size-sm;
             color: $black-color;
-            font-family: $font-family-semibold;
+            
         }
         button {
             width: 100%;
-            font-family: $font-family-semibold;
+           font-size: $font-size-ll;
             background: $light-gray-button-color;
+            font-family: $font-family-open-sans-semibold;
             border: 1px solid darken($light-gray-button-color, 10%);
             padding: 15px;
+            color: $department-text-gray;
         }
     }
 }
@@ -260,9 +264,11 @@ section {
         .name {
             position: absolute;
             width: 100%;
-            top: -58px;
+            top: -54px;
             left: 0;
             padding: 0 15px;
+            font-family: $font-family-open-sans-light;
+            font-size: $font-size-ll;
             @media screen and (max-width: $md) {
                 top: -55px;
             }
@@ -315,17 +321,17 @@ section {
             font-weight: bold;
             margin-bottom: 15px;
             h5 {
-                font-family: $font-family-semibold;
+                font-family: $font-family-open-sans-semibold;
                 color: $department-base-color;
                 margin: 0;
+                font-size: $font-size-l;
             }
         }
         .read-more {
             background: $department-base-color;
             border: none;
-            font-size: $font-size-sm;
+            font-size: $font-size-l;
             color: $white-color;
-            font-family: $font-family;
             padding: 20px;
             width: 250px;
         }

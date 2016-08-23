@@ -13,11 +13,12 @@ html {
 }
 
 body {
-    font-size: $font-size-xl;
-    color: $body-text-color;
+    font-size: $font-size-m;
+    color: $black-color;
     background: $white-color;
-    font-family: $font-family;
+    font-family: $font-family-open-sans;
     overflow-x: hidden;
+    line-height: 24px;
 }
 
 a {
@@ -148,7 +149,7 @@ h6 {
                                 padding-left: 0;
                             }
                             h6 {
-                                font-family: $font-family-bold;
+                                font-family: $font-family-open-sans-bold;
                                 font-size: $font-size-s;
                                 color: $top-drop-down-menu-color;
                                 margin-bottom: 15px;
@@ -190,8 +191,8 @@ h6 {
             li {
                 a {
                     padding: 8px 21px;
-                    font-size: $font-size-m;
-                    font-family: $font-family-semibold;
+                    font-size: $font-size-xs;
+                    font-family: $font-family-open-sans-bold;
                     @media screen and (min-width: $md) {
                         padding: 8px 11px;
                     }
@@ -332,8 +333,9 @@ h6 {
         }
     }
     span {
-        font-size: $font-size-sm;
+        font-size: $font-size-s;
         color: $white-color;
+        font-family: $font-family-open-sans-light;
     }
     button {
         background: $department-base-color;
@@ -391,7 +393,7 @@ h6 {
                     padding: 0;
                 }
                 a {
-                    font-size: $font-size-l;
+                    font-size: $font-size;
                     color: $black-color;
                     line-height: 45px;
                     padding: 10px 25px;
@@ -426,9 +428,9 @@ h6 {
             li.open {
                 a {
                     color: $menu-hover-color;
-                    font-family: $font-family-probold;
+                    font-family: $font-family-open-sans-bold;
                     background: none;
-                    padding: 9px 22px;
+                    padding: 9px 21px;
                     border: 1px solid $menu-hover-color;
                     border-bottom: 1px solid $white-color;
                     @media screen and (max-width: $sm) {

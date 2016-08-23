@@ -2,6 +2,7 @@
 
 $font-family: 'source_sans_proregular';
 $font-family-medium: 'gotham_mediumregular';
+$font-family-gothamregular: 'gothambookregular';
 $font-family-light: 'gotham_lightregular';
 $font-family-bold: 'gotham_boldregular';
 $font-family-semibold: 'source_sans_prosemibold';
@@ -17,22 +18,28 @@ $font-family-crimson-roman: 'crimson_textroman';
 $font-family-crimson-italic: 'crimson_textitalic';
 $font-family-crimson-bold: 'crimson_textbold';
 
-$font-size: 1rem;
-$font-size-sm: 1.063rem;
-$font-size-l: 1.125rem;
-$font-size-ll: 1.188rem;
-$font-size-xl: 1.250rem;
-$font-size-xxl: 1.375em;
-$font-size-m: 0.875rem;
-$font-size-s: 0.750rem;
+$font-family-open-sans: 'open_sansregular';
+$font-family-open-sans-light: 'open_sanslight';
+$font-family-open-sans-semibold: 'open_sanssemibold';
+$font-family-open-sans-bold: 'open_sansbold';
 
-$font-lg: 2.250rem;
-$font-h1:2rem;
-$font-h2:1.625rem;
-$font-h3:1.5rem;
-$font-h4:1.375rem;
-$font-h5:1.250rem;
-$font-h6:1.063rem;
+$font-size: 1rem;   /*16px*/
+$font-size-sm: 1.063rem;    /*17px*/
+$font-size-l: 1.125rem;     /*18px*/
+$font-size-ll: 1.188rem;    /*19px*/
+$font-size-xl: 1.250rem;    /*20px*/
+$font-size-xxl: 1.375em;    /*22px*/
+$font-size-m: 0.875rem; /*14px*/
+$font-size-s: 0.750rem; /*12px*/
+$font-size-xs: 0.688rem; /*11px*/
+
+$font-lg: 2.250rem; /*36px*/
+$font-h1:2rem;  /*32px*/
+$font-h2:1.625rem;  /*26px*/
+$font-h3:1.5rem;    /*24px*/
+$font-h4:1.375rem;  /*22px*/
+$font-h5:1.250rem;  /*20px*/
+$font-h6:1.063rem;  /*17px*/
 
 
 $base-blue-color: #20456c;
@@ -87,6 +94,7 @@ $menu-hover-color:#8d5715;
 $light-gray-button-color:#f8f8f8;
 $department-light-gray:#c3c3c3;
 $widgets-background:#f0f0f0;
+$department-text-gray:#656565;
 
 
 
@@ -96,3 +104,4 @@ $md:992px;
 $sm:768px;
 $axs:635px;
 $xs:480px;
+
