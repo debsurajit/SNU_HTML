@@ -80,6 +80,15 @@
 
 }
 
+@font-face {
+    font-family: 'gothambookregular';
+    src: url('../fonts/gotham/gothambook_regular-webfont.woff2') format('woff2'),
+         url('../fonts/gotham/gothambook_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 
 @font-face {
@@ -155,8 +164,13 @@
 
 @font-face {
     font-family: 'crimson_textroman';
+<<<<<<< HEAD
     src: url('../fonts/crimson-italic/crimsontext-regular-webfont.woff2') format('woff2'),
          url('../fonts/crimson-italic/crimsontext-regular-webfont.woff') format('woff');
+=======
+    src: url('../fonts/crimson-regular/crimsontext-regular-webfont.woff2') format('woff2'),
+         url('../fonts/crimson-regular/crimsontext-regular-webfont.woff') format('woff');
+>>>>>>> d8380dfd00931254f302a6b5a149d98aa4ea0a74
     font-weight: normal;
     font-style: normal;
 
