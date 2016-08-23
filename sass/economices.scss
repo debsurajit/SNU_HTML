@@ -32,28 +32,28 @@
         box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.2);
         padding: 20px;
         z-index: 1;
-         @media screen and (min-width: $sm) {
-             width: 370px;
+        @media screen and (min-width: $sm) {
+            width: 370px;
             height: 300px;
-             bottom: -20px;
+            bottom: -20px;
         }
         @media screen and (min-width: $md) {
-             width: 500px;
+            width: 500px;
             height: 250px;
             bottom: 0;
         }
         a {
-            color: $top-header-bg;
+            color: $department-base-color;
             text-decoration: underline;
         }
         h1 {
-            color: $top-header-bg;
+            color: $department-base-color;
             margin: 0;
             padding: 0;
         }
         h3 {
             padding: 0 0 20px 0;
-            color: $banner-title-gray-color;
+            color: $department-light-gray;
         }
         p {
             font-size: $font-size;
@@ -62,11 +62,10 @@
         }
     }
     .date-section {
-        background: $top-header-bg;
+        background: $department-base-color;
         position: absolute;
         right: 0;
         width: 100%;
-        
         @media screen and (min-width: $sm) {
             position: absolute;
             padding: 25px 25px 25px 348px;
@@ -75,7 +74,6 @@
         @media screen and (min-width:$md) {
             bottom: 20px;
             padding: 25px 25px 25px 500px;
-            
         }
         .date-icon {
             padding: 10px 25px 10px 30px;
@@ -177,7 +175,7 @@ section {
     }
     h1 {
         font-family: $font-family;
-        color: $top-header-bg;
+        color: $department-base-color;
         font-size: $font-lg;
     }
     p {
@@ -213,12 +211,12 @@ section {
 .message-section {
     .message-section-inner {
         padding: 20px;
-        border: 3px solid $top-header-bg;
+        border: 3px solid $department-base-color;
         border-right: none;
         border-bottom: none;
         h3 {
             font-family: $font-family-semibold;
-            color: $top-header-bg;
+            color: $department-base-color;
             padding: 0 0 30px 0;
         }
         p {
@@ -240,7 +238,7 @@ section {
 /* middle body css start  */
 
 .middle-body {
-    background: $top-header-bg;
+    background: $department-base-color;
     padding: 0 0 30px 0;
     margin-top: 20px;
     img {
@@ -295,13 +293,12 @@ section {
         padding: 30px 15px;
         display: table;
         padding-right: 0;
-        border-right:15px solid $white-color;
-        @media screen and (max-width:$sm){
+        border-right: 15px solid $white-color;
+        @media screen and (max-width: $sm) {
             margin-bottom: 30px;
-            border-right:none;
+            border-right: none;
         }
-        
-        @media screen and (max-width:$axs){
+        @media screen and (max-width:$axs) {
             width: 100%;
         }
         .event-big-img {
@@ -320,12 +317,12 @@ section {
             margin-bottom: 15px;
             h5 {
                 font-family: $font-family-semibold;
-                color: $top-header-bg;
+                color: $department-base-color;
                 margin: 0;
             }
         }
         .read-more {
-            background: $top-header-bg;
+            background: $department-base-color;
             border: none;
             font-size: $font-size-sm;
             color: $white-color;
@@ -342,15 +339,14 @@ section {
         left: -374px;
         height: 100%;
         display: table-cell;
-         @media screen and (max-width:$axs){
+        @media screen and (max-width: $axs) {
             width: 100%;
         }
     }
-    
-    .lower-body-right{
-        @media screen and (max-width:$axs){
+    .lower-body-right {
+        @media screen and (max-width: $axs) {
             width: 100%;
-            img{
+            img {
                 width: 100%;
             }
         }
