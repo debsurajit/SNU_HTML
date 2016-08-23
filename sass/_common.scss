@@ -13,11 +13,12 @@ html {
 }
 
 body {
-    font-size: $font-size-xl;
-    color: $body-text-color;
+    font-size: $font-size-m;
+    color: $black-color;
     background: $white-color;
-    font-family: $font-family;
+    font-family: $font-family-open-sans;
     overflow-x: hidden;
+    line-height: 24px;
 }
 
 a {
@@ -29,11 +30,12 @@ a {
 
 h1 {
     font-size: $font-h1;
-    line-height: 36px;
-    color: $dark-gray;
-    font-family: $font-family-times;
+    line-height: 32px;
+    color: $department-base-color;
+    font-family:$font-family-crimson-roman;
     font-weight: normal;
-    margin: 0 0 30px 0;
+    padding: 30px 0;
+    margin: 0;
 }
 
 h2 {
@@ -90,19 +92,16 @@ h6 {
 }
 
 .top_menu {
-    background: $top-header-bg;
+    background: $department-base-color;
     .navbar-default {
         background: none;
         border: none;
         margin: 0;
         min-height: auto;
         position: inherit;
-        
         .navbar-collapse {
             border: none;
-           
         }
-       
         ul.navbar-nav {
             margin: 0;
             li {
@@ -141,8 +140,7 @@ h6 {
                     .top-drop-down-menu {
                         div {
                             min-height: 200px;
-                            
-                            @media screen and (max-width:$xs){
+                            @media screen and (max-width: $xs) {
                                 width: 100%;
                                 margin-bottom: 30px;
                                 min-height: auto;
@@ -151,7 +149,7 @@ h6 {
                                 padding-left: 0;
                             }
                             h6 {
-                                font-family: $font-family-bold;
+                                font-family: $font-family-open-sans-bold;
                                 font-size: $font-size-s;
                                 color: $top-drop-down-menu-color;
                                 margin-bottom: 15px;
@@ -182,8 +180,6 @@ h6 {
                     color: $white-color;
                 }
             }
-            
-            
         }
         ul.navbar-right {
             @media screen and (min-width: $sm) {
@@ -195,8 +191,8 @@ h6 {
             li {
                 a {
                     padding: 8px 21px;
-                    font-size: $font-size-m;
-                    font-family: $font-family-semibold;
+                    font-size: $font-size-xs;
+                    font-family: $font-family-open-sans-bold;
                     @media screen and (min-width: $md) {
                         padding: 8px 11px;
                     }
@@ -272,12 +268,12 @@ h6 {
             &:last-child {
                 margin-left: 50px;
                 a {
-                    border-left: 2px solid $search-text-color;
+                    border-left: 2px solid $department-light-gray;
                 }
             }
             a {
                 font-family: $font-family-medium;
-                color: $search-text-color;
+                color: $department-light-gray;
                 padding: 0 5px;
                 font-size: $font-size-m;
             }
@@ -337,12 +333,13 @@ h6 {
         }
     }
     span {
-        font-size: $font-size-sm;
+        font-size: $font-size-s;
         color: $white-color;
+        font-family: $font-family-open-sans-light;
     }
     button {
-        background: $top-header-bg;
-        border: 1px solid $top-header-bg;
+        background: $department-base-color;
+        border: 1px solid $department-base-color;
         font-size: $font-size;
         color: $white-color;
         padding: 5px 35px;
@@ -368,15 +365,12 @@ h6 {
         background: none;
         border: none;
         margin: 0;
-        
         .navbar-collapse {
-            
-            @media screen and (max-width:$sm){
-                    height: 300px;
-                    overflow-y: scroll;
-                }
+            @media screen and (max-width: $sm) {
+                height: 300px;
+                overflow-y: scroll;
+            }
         }
-        
         ul.navbar-nav {
             text-align: center;
             width: 100%;
@@ -387,80 +381,75 @@ h6 {
                 display: inline-block;
                 float: unset;
                 padding: 0 31px;
-              
-               @media screen and (max-width:$lg) {
-                    padding:0 15px; 
-                  }
-              @media screen and (max-width: $md) {
-                padding: 0;
-              }
+                @media screen and (max-width: $lg) {
+                    padding: 0 15px;
+                }
+                @media screen and (max-width: $md) {
+                    padding: 0;
+                }
                 @media screen and (max-width: $sm) {
                     float: left;
                     width: 100%;
-                    padding:0; 
+                    padding: 0;
                 }
                 a {
-                    font-size: $font-size-l;
+                    font-size: $font-size;
                     color: $black-color;
                     line-height: 45px;
                     padding: 10px 25px;
-                  
-                 
-                    @media screen and (max-width:$sm) {
-                      padding: 10px 20px;
-                      line-height: 20px;
-                      border-bottom:$main-menu-border-color 1px solid;
+                    @media screen and (max-width: $sm) {
+                        padding: 10px 20px;
+                        line-height: 20px;
+                        border-bottom: $main-menu-border-color 1px solid;
                     }
                 }
-              
-              .dropdown-menu {
-                 left: 31px;
-                @media screen and (max-width:$lg) {
-                  left: 15px;
+                .dropdown-menu {
+                    left: 31px;
+                    @media screen and (max-width: $lg) {
+                        left: 15px;
+                    }
+                    @media screen and (max-width:$md) {
+                        left: 0;
+                    }
                 }
-                @media screen and (max-width:$md) {
-                  left: 0;
-                }
-              }
                 &:last-child {
                     .dropdown-menu {
                         right: 31px;
                         left: inherit;
-                      @media screen and (max-width:$lg) {
-                        right:15px;
-                      }
-                      @media screen and (max-width:$md) {
-                        right:0;
-                      }
+                        @media screen and (max-width: $lg) {
+                            right: 15px;
+                        }
+                        @media screen and (max-width:$md) {
+                            right: 0;
+                        }
                     }
                 }
             }
             li.open {
-                
                 a {
                     color: $menu-hover-color;
-                    font-family: $font-family-probold;
+                    font-family: $font-family-open-sans-bold;
                     background: none;
-                    padding: 9px 22px;
+                    padding: 9px 21px;
                     border: 1px solid $menu-hover-color;
                     border-bottom: 1px solid $white-color;
-                  @media screen and (max-width:$sm) {
-                    border: none;
-                  }
+                    @media screen and (max-width: $sm) {
+                        border: none;
+                    }
                 }
                 .dropdown-menu {
                     border: 1px solid $menu-hover-color;
-                  @media screen and (max-width:$sm) {
-                    padding-left: 20px;
-                    border: none;
-                  }
+                    @media screen and (max-width: $sm) {
+                        padding-left: 20px;
+                        border: none;
+                    }
                     li {
                         width: 100%;
                         border-top: 1px solid $main-menu-border-color;
                         padding: 0 50px 0 20px;
-                      &:first-child {
-                        border-top: none;
-                      } 
+                        &:first-child {
+                            border-top: none;
+                        }
                         a {
                             color: $black-color;
                             font-family: $font-family;
@@ -473,4 +462,3 @@ h6 {
         }
     }
 }
-
