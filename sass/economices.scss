@@ -47,13 +47,12 @@
             text-decoration: underline;
         }
         h1 {
-            color: $department-base-color;
-            margin: 0;
             padding: 0;
         }
         h3 {
             padding: 0 0 20px 0;
             color: $department-light-gray;
+            font-family: $font-family-crimson-roman;
         }
         p {
             font-size: $font-size;
