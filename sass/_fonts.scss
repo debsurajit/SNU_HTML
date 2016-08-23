@@ -135,3 +135,33 @@
     font-style: normal;
 
 }
+
+/*Font for Department*/
+
+@font-face {
+    font-family: 'crimson_textbold';
+    src: url('../fonts/crimsontext-bold-webfont.woff2') format('woff2'),
+         url('../fonts/crimsontext-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'crimson_textitalic';
+    src: url('../fonts/crimsontext-italic-webfont.woff2') format('woff2'),
+         url('../fonts/crimsontext-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'crimson_textroman';
+    src: url('../fonts/crimsontext-regular-webfont.woff2') format('woff2'),
+         url('../fonts/crimsontext-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
