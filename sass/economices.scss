@@ -3,13 +3,9 @@
 /*  banner section */
 
 .banner-section {
-  margin: 335px auto 0;
-  max-width: 1440px;
-  position: relative;
-  height: 720px;
-  @media screen and (max-width: $md) {
-    height: auto;
-  }
+  @include banner-max-width ;
+  margin-top: 335px;
+  
   .banner-img {
     height: 700px;
     overflow-y: hidden;
@@ -246,6 +242,7 @@ section {
   img {
     width: 100%;
   }
+  
   p {
     color: $white-color;
     padding-top: 20px;

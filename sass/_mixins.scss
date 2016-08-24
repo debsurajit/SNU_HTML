@@ -5,3 +5,50 @@
         -webkit-transition: $transition;
         -moz-transition: $transition;
     }
+
+@mixin banner-max-width {
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
+  height: 720px;
+   @media screen and (max-width: $md) {
+    height: auto;
+  }
+}
+
+@mixin left-menu-structure {
+  background: $white-color;
+  
+  ul {
+    padding-left: 23px;
+    list-style: none;
+    
+    li {
+      border-bottom: $widgets-background 1px solid;
+      list-style: none;
+      
+      &:last-child {
+        border: none;
+      }
+      
+      a {
+        color: $black-color;
+        padding: 20px 0;
+        display: block;
+        
+        &:hover {
+          color: $department-base-color;
+          cursor: pointer;
+          font-weight: bold;
+          
+          &:hover:after {
+            font-family: FontAwesome;
+            content:"\f105";
+            display: inline-block;
+            padding-left:20px;
+          }
+        }
+      }
+    }
+  }
+}

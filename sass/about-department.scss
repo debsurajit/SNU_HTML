@@ -1,0 +1,33 @@
+@import 'main_import';
+
+.banner {
+  @include banner-max-width ;
+  margin-top: 280px;
+}
+
+.left-menu {
+  @include left-menu-structure;
+}
+
+.breadcrumb {
+  background: none;
+  
+  span {
+    color: $department-base-color;
+  }
+}
+
+.right-panel {
+  h4 {
+    font-size:$font-size;
+    span {
+      font-size: 12px;
+    }
+  }
+  
+  .testimonial {
+    color: $department-highlight-color;
+    font-style: italic;
+    font-size: 12px;
+  }
+}
