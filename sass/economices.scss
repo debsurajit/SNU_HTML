@@ -284,19 +284,48 @@ section {
 /* lower body start  */
 
 .lower-body {
-  position: relative;
-  max-width: 1920px;
-  margin: 0 auto;
-  .events {
-    background: $light-gray-button-color;
-    padding: 30px 15px;
-    display: table;
-    padding-right: 0;
-    border-right: 15px solid $white-color;
-    @media screen and (max-width: $sm) {
-      margin-bottom: 30px;
-      border-right: none;
-    }
+
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+    .events {
+        background: $light-gray-button-color;
+        padding: 30px 15px;
+        display: table;
+        padding-right: 0;
+        border-right: 15px solid $white-color;
+        @media screen and (max-width: $sm) {
+            margin-bottom: 30px;
+            border-right: none;
+        }
+        @media screen and (max-width:$axs) {
+            width: 100%;
+        }
+        .event-big-img {
+            padding-left: 0;
+            img {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            p {
+                font-size: $font-size-m;
+            }
+        }
+        .event-content {
+            font-size: $font-size-s;
+            font-weight: bold;
+            margin-bottom: 15px;
+            h5 {
+                font-family: $font-family-open-sans-semibold;
+                color: $department-base-color;
+                margin: 0;
+                font-size: $font-size-l;
+            }
+        }
+        .read-more {
+            @include read-more-button;
+        }
+
     @media screen and (max-width:$axs) {
       width: 100%;
     }
