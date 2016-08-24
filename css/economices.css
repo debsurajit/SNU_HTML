@@ -280,9 +280,9 @@ h6 {
 }
 /* line 108, ../sass/_common.scss */
 .top_menu .navbar-default ul.navbar-nav li a {
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: #ffffff;
-  font-family: "source_sans_proregular";
+  font-family: "open_sansregular";
   padding: 8px 15px 8px 0;
 }
 @media screen and (max-width: 768px) {
