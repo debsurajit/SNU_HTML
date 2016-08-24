@@ -3,9 +3,8 @@
 /*  banner section */
 
 .banner-section {
-  @include banner-max-width ;
+  @include banner-max-width;
   margin-top: 335px;
-  
   .banner-img {
     height: 700px;
     overflow-y: hidden;
@@ -242,7 +241,6 @@ section {
   img {
     width: 100%;
   }
-  
   p {
     color: $white-color;
     padding-top: 20px;
