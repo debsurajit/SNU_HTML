@@ -737,24 +737,23 @@ h6 {
   padding: 10px 0;
 }
 
-/*Banner*/
-/* line 4, ../sass/about-department.scss */
-.banner {
-  margin: 0 auto;
-  max-width: 1440px;
-  position: relative;
-  height: 720px;
-  margin-top: 280px;
+/* line 3, ../sass/about-department-society.scss */
+.margin-top {
+  margin-top: 250px;
 }
-@media screen and (max-width: 992px) {
-  /* line 4, ../sass/about-department.scss */
-  .banner {
-    height: auto;
-  }
+
+/*Banner*/
+/* line 8, ../sass/about-department-society.scss */
+.banner {
+  margin-top: 40px;
+}
+/* line 11, ../sass/about-department-society.scss */
+.banner img {
+  max-width: 100%;
 }
 
 /*Left Panel*/
-/* line 10, ../sass/about-department.scss */
+/* line 17, ../sass/about-department-society.scss */
 .left-menu {
   background: #ffffff;
 }
@@ -792,7 +791,7 @@ h6 {
   padding-left: 20px;
 }
 
-/* line 14, ../sass/about-department.scss */
+/* line 21, ../sass/about-department-society.scss */
 .breadcrumb {
   background: none;
   margin-top: 10px;
@@ -803,51 +802,59 @@ h6 {
   color: #8d5715;
 }
 
-/*Middle Content Panel*/
-/* line 20, ../sass/about-department.scss */
-.middle-content a {
-  color: #8d5715;
-  text-decoration: underline;
+/*Left Panel*/
+/* line 24, ../sass/about-department-society.scss */
+.left-menu {
+  background: #ffffff;
 }
-/* line 24, ../sass/about-department.scss */
-.middle-content a:hover {
-  text-decoration: none;
+/* line 22, ../sass/_mixins.scss */
+.left-menu ul {
+  padding-left: 23px;
+  list-style: none;
+}
+/* line 26, ../sass/_mixins.scss */
+.left-menu ul li {
+  border-bottom: #f0f0f0 1px solid;
+  list-style: none;
+}
+/* line 30, ../sass/_mixins.scss */
+.left-menu ul li:last-child {
+  border: none;
+}
+/* line 34, ../sass/_mixins.scss */
+.left-menu ul li a {
+  color: #000000;
+  padding: 20px 0;
+  display: block;
+}
+/* line 39, ../sass/_mixins.scss */
+.left-menu ul li a:hover {
+  color: #8d5715;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* line 44, ../sass/_mixins.scss */
+.left-menu ul li a:hover:hover:after {
+  font-family: FontAwesome;
+  content: "\f105";
+  display: inline-block;
+  padding-left: 20px;
 }
 
-/* line 29, ../sass/about-department.scss */
-.title {
-  font-size: 2rem;
-  line-height: 32px;
+/* line 28, ../sass/about-department-society.scss */
+.breadcrumb {
+  background: none;
+  margin-top: 10px;
+  font-size: 0.75rem;
+}
+/* line 61, ../sass/_mixins.scss */
+.breadcrumb span {
   color: #8d5715;
-  font-family: "crimson_textroman";
-  font-weight: normal;
-  padding: 30px 0;
-  margin: 0;
 }
 
-/*Right Panel*/
-/* line 34, ../sass/about-department.scss */
-.right-panel {
-  padding: 93px 0 0;
-}
-@media screen and (max-width: 768px) {
-  /* line 34, ../sass/about-department.scss */
-  .right-panel {
-    padding: 20px 0 0;
-  }
-}
-/* line 41, ../sass/about-department.scss */
-.right-panel h4 {
-  font-size: 0.875rem;
-  padding-top: 6px;
-}
-/* line 45, ../sass/about-department.scss */
-.right-panel h4 span {
-  font-size: 0.75rem;
-}
-/* line 50, ../sass/about-department.scss */
-.right-panel .testimonial {
-  color: #d58320;
-  font-style: italic;
-  font-size: 0.75rem;
+/* line 33, ../sass/about-department-society.scss */
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
