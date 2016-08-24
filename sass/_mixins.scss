@@ -5,3 +5,34 @@
         -webkit-transition: $transition;
         -moz-transition: $transition;
     }
+
+@mixin read-more-button{
+
+        background: $department-base-color;
+        border: none;
+        font-size: $font-size-l;
+        color: $white-color;
+        padding: 20px;
+        width: 250px;
+    font-family: $font-family-open-sans;
+
+}
+
+@mixin small-heading{
+   
+        font-family: $font-family-open-sans-bold;
+        color: $department-light-gray;
+        font-size: $font-size-m;
+        text-transform: uppercase;
+        padding: 0 15px 10px;
+}
+
+@mixin humanities-gray-button{
+    background: $department-text-gray;
+        border: none;
+        font-size: $font-size-l;
+        color: $white-color;
+        padding: 20px;
+        width: 100%;
+    font-family: $font-family-open-sans;
+}
